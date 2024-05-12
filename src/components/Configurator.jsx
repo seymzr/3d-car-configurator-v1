@@ -15,17 +15,7 @@ const Configurator = () => {
     setHeadlightColor,interior,setInterior,environment,setEnvironment
   } = useCustomization();
   
-  var cost = 0;
-  if (car === "car1") {
-    cost = 100000;
-  } else {
-    cost = 150000;
-  }
-  if (accessory === 1) {
-    cost += 1000;
-  } else {
-    cost += 0;
-  }
+
 
   
   return (

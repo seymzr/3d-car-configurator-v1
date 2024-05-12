@@ -8,17 +8,15 @@ import {
 
 // import { useLoader } from '@react-three/fiber'
 import { Suspense } from "react";
-import Car1 from "./Car1";
-import Car2 from "./Car2";
+
+
 import { useCustomization } from "../contexts/Customization";
 import { Bmw } from "./Bmw";
 
 // import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 function CarSelect({ carState }) {
-  if (carState === "car1") {
-    return <Bmw />;
-  }
+  
   return <Bmw />;
 }
 
