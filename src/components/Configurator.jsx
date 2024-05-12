@@ -25,7 +25,7 @@ const Configurator = () => {
         <div className="configurator_section_title">Car Options</div>
         
       </div>
-      <div className="configurator_section">
+     {/*  <div className="configurator_section">
         <div className="configurator_section_title">Environments</div>
       
         <div className="configurator_section_values">
@@ -49,7 +49,7 @@ const Configurator = () => {
           </div>
           
         </div>
-      </div>
+      </div> */}
       <div className="configurator_section">
         <div className="configurator_section_title">Car Colour</div>
         <div className="configurator_section_values">
