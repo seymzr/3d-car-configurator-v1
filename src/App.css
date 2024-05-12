@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.configurator{
+  position: fixed;
+  background: #00000053;
+  right: 0px;
+  width: 320px;
+  bottom: 0;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 32px;
+}
+.controls{
+  position: fixed;
+  background: #00000053;
+  left: 0px;
+  width: 320px;
+  bottom: 0;
+  color: white;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 2px;
+}
+
+.configurator_section_title{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.configurator_section_values{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.item_option {
+  font-size: 16px;
+  color: #acacac;
+  transition: 0.4s color;
+}
+
+.item_colour_preview {
+  width: 32px;
+  height: 32px;
+
+  border: solid 1px #999999
+}
+
+.item.item-active .item_colour_preview{
+  border: solid 3px white;
+}
+
+.item {
+  transition: 0.4s opacity;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.item.item-active .item_option {
+  color: white
+}
+
+
+.details{
+  position: fixed;
+  left: 26px;
+  width: 320px;
+  bottom: 25vh;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.details_section_title{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.details_section_values{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
