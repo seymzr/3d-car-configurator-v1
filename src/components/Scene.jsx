@@ -30,9 +30,9 @@ const Scene = () => {
 
        
         <>
-        {environment=='env2'&&<Environment files={`./public/env2.hdr`} background ground />}
-          {environment=='env'&&<Environment files={`./public/env.hdr`} background ground />}
-          {environment=='env1'&&<Environment files={`./public/env1.hdr`} background ground />}
+        {environment=='env2'&&<Environment files={`./public/environments/env2.hdr`} background ground />}
+          {environment=='env'&&<Environment files={`./public/environments/env.hdr`} background ground />}
+          {environment=='env1'&&<Environment files={`./public/environments/env1.hdr`} background ground />}
         <Suspense fallback={null}>
           <CarSelect carState={car} />
         </Suspense>
