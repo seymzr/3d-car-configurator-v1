@@ -28,8 +28,9 @@ const Scene = () => {
 
        
         <>
-        
-<Environment preset="sunset" background ground  />
+        {environment=='env2'&&<Environment files={`./src/assets/env2.hdr`} background ground />}
+          {environment=='env'&&<Environment files={`./src/assets/env.hdr`} background ground />}
+          {environment=='env1'&&<Environment files={`./src/assets/env1.hdr`} background ground />}
         <Suspense fallback={null}>
           <CarSelect carState={car} />
         </Suspense>
